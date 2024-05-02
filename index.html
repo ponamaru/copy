@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Game test</title>
+<body bgcolor="#000000"></body>
+<link href="playermotion.css" rel="stylesheet">
+</head>
+<img id="img1" src="teststage.png" width="1450">
+<img id="img2" src="teststage.png" width="1450">
+
+<script src="test.js"></script>
+<script src="thing1.js"></script>
+<body>
+<script>
+function stagelink() {
+document.getElementById( 'img2' ).style.left = stageX + 1440 + "px";
+}
+let intervalId = setInterval(stagelink, 10);
+	</script>
+</body>
+<script>
+//参考：https://qiita.com/KurachiWeb/items/8f14c4ac40e35660d7bd
+document.addEventListener('keydown', event => {
+    if (event.code === 'Slash') {
+	const changeimg = document.getElementById("img1,img2");
+        changeimg.src = "rico.png";
+    }
+});
+</script>
+</script>
+<div id="area" class="fuchidori">Z_key</div>
+<script>
+
+</script>
+<script>
+var textX = 192;
+var textY = 640;
+document.getElementById( 'area' ).style.top = textY + "px";
+document.getElementById( 'area' ).style.left = textX + "px";
+
+</script>
+</html>
