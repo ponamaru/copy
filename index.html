@@ -10,7 +10,12 @@
 </head>
 <img id="img1" src="teststage.png" width="1450">
 <img id="img2" src="teststage.png" width="1450">
-
+<script>
+    var ua = navigator.userAgent.toLowerCase();
+    if ((ua.indexOf('iphone') > 0) || (ua.indexOf('ipad') > 0) || (ua.indexOf('ipod') > 0)) {
+        window.location.href = "{for-ipad.html}";
+    }
+</script>
 <script src="test.js"></script>
 <script src="thing1.js"></script>
 <body>
