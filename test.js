@@ -374,5 +374,13 @@ function audio1() {
 const audio = new Audio('seeking.mp3');
   audio.play();
 }
-
 let intervalId4 = setInterval(audio1, 60500);
+var bgmF = 0;
+function firstBGM() {
+if(bgmF === 0) {
+bgmF = 1;
+const audio = new Audio('seeking.mp3');
+  audio.play();
+}
+}
+let intervalId5 = setInterval(firstBGM, 1);
