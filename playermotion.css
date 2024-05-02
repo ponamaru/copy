@@ -1,0 +1,139 @@
+#stickhead {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#stickeye3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#stickbody {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#leftleg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#rightleg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.re-wrap {
+animation: floatingw 4s ease-in-out infinite alternate-reverse;
+}
+
+    @keyframes floatingw {
+      0% {
+        transform: scaleY(1);
+      }
+      90% {
+        transform: scaleY(1);
+      }
+      95% {
+        transform: scaleY(0.1);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+}
+.rotatoX {
+animation: floatingy 1.8s ease-in-out infinite alternate-reverse;
+}
+
+      @keyframes floatingy {
+      0% {
+        transform: translateY(-1%);
+      }
+      100% {
+        transform: translateY(1%);
+      }
+}
+
+
+.blue {
+    animation: floating 0.5s ease-in-out infinite alternate-reverse;
+    }
+    @keyframes floating {
+      0% {
+        transform: rotate(45deg);
+      }
+      100% {
+        transform: rotate(-45deg);
+      }  
+}
+.rlm {
+    animation: floati 0.5s ease-in-out infinite alternate-reverse;
+    }
+    @keyframes floati {
+      0% {
+        transform: rotate(-45deg);
+      }
+      100% {
+        transform: rotate(45deg);
+      }  
+}
+.null {
+background-color: black;
+}
+		#ri {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#area {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#img1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+.fuchidori {
+  color: #000;
+  -webkit-text-stroke: 1px #FFF;
+  text-stroke: 1px #FFF;
+  font-weight: bold;
+  font-size: 200%;
+}
+#img2 {
+position: absolute;
+top: 0;
+left: 0;
+}
+#thing1 {
+position: absolute;
+top: 0;
+left: 0;
+}
+#stickface {
+position: absolute;
+top: 300;
+left: 700;
+}
+#face2 {
+position: absolute;
+top: 300;
+left: 700;
+}
+html, body {
+    overflow: hidden;
+}
+.item {
+	width: 1550px;
+	height: 800px;
+	margin: auto;
+transform-origin:50% 55%;
+}
+.item2 {
+	width: 1550px;
+	height: 800px;
+	margin: auto;
+transform-origin:50% 55%;
+}
