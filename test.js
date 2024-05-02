@@ -271,7 +271,7 @@ if(walk === 2) {
 var lr = 1;
 var y = 300;
 var x = 500;
-var stageX = 0;
+var stageX = 200;
 var stageY = 0;
 var walk = 2;
 	document.getElementById( 'stickhead' ).style.top = y + "px";
