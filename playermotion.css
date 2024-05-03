@@ -137,3 +137,31 @@ transform-origin:50% 55%;
 	margin: auto;
 transform-origin:50% 55%;
 }
+.fadeout {
+  animation : fadeOut 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#fadein {
+    width: 130%;
+  z-index: 1;
+}
+.fadein {
+  animation : fadein 3s;
+  animation-fill-mode: both;
+}
+@keyframes fadein {
+  0% {
+    opacity: 1 ;
+  }
+  100% {
+    opacity: 0 ;
+  }
+}
