@@ -1,3 +1,4 @@
+document.write( '<div class="fadein2"><img src="black2.png" id="fadein" class="fadein" width="120%" height="100%"></div>' );
 document.write( '<img src="stick.png" id="stickbody" width="600">' );
 document.write( '<img src="stick.png" id="leftleg" class="leftleg" width="600">' );
 document.write( '<img src="stick.png" id="rightleg" class="rightleg" width="600">' );
@@ -271,7 +272,7 @@ if(walk === 2) {
 var lr = 1;
 var y = 300;
 var x = 500;
-var stageX = 200;
+var stageX = 400;
 var stageY = 0;
 var walk = 2;
 	document.getElementById( 'stickhead' ).style.top = y + "px";
