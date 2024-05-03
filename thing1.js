@@ -3,7 +3,7 @@
 document.write( '<img src="目.png" id="thing1" >' );
 
 function stagelink2() {
-if(since === 1) {
+if(fun === 1) {
 document.getElementById( 'thing1' ).style.left = stageX + 1400 + "px";
 document.getElementById( 'thing1' ).style.top = stageY + 400 + "px";
 }
