@@ -107,6 +107,16 @@ position: absolute;
 top: 0;
 left: 0;
 }
+#img1 {
+position: absolute;
+top: 0;
+left: 0;
+}
+#dor1 {
+position: absolute;
+top: 0;
+left: 0;
+}
 #thing1 {
 position: absolute;
 top: 0;
@@ -150,8 +160,11 @@ transform-origin:50% 55%;
   }
 }
 #fadein {
-    width: 130%;
   z-index: 1;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
 }
 .fadein {
   animation : fadein 3s;
