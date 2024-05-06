@@ -1,8 +1,10 @@
+
 document.write( '<div class="fadein2"><img src="black2.png" id="fadein" class="fadein" width="120%" height="100%"></div>' );
+document.write( '<img src="black2.png" id="black" class="op0" width="120%" height="100%">' );
 document.write( '<img src="stick.png" id="stickbody" width="600">' );
 document.write( '<img src="stick.png" id="leftleg" class="leftleg" width="600">' );
 document.write( '<img src="stick.png" id="rightleg" class="rightleg" width="600">' );
-document.write( '<div class="item rotateX" id="stickface" width="600"><div id="face2" class="item2"><img src="stickhead.png" id="stickhead" type="file1" class="red" width="600"><div class="re-wrap" id="stickeye3"><img src="stickeye3.png" id="stickeye" class="re" width="600"></div></div></div>' );
+document.write( '<div id="stickface" class="item2"><div class="item rotateX" id="face2" width="600"><img src="stickhead.png" id="stickhead" type="file1" class="red" width="600"><div class="re-wrap" id="stickeye3"><img src="stickeye3.png" id="stickeye" class="re" width="600"></div></div></div>' );
 
 toggleClass();
 function toggleClass() {
@@ -49,7 +51,7 @@ function toggleClass3() {
 }
 
 var y = 300;
-var x = 700;
+var x = 500;
 
 function bodylink() {
 
@@ -138,7 +140,7 @@ function cos() {
 
 function cos2() {
     const changeimg = document.getElementById("stickeye");
-    changeimg.src = "stickeye5.png";
+    changeimg.src = "stickeye.png";
 }
 
 function cos3() {
@@ -148,7 +150,7 @@ function cos3() {
 
 function cos4() {
     const changeimg = document.getElementById("stickhead");
-    changeimg.src = "stickhead7.png";
+    changeimg.src = "stickhead4.png";
 }
 
 function pm1() {
@@ -267,14 +269,15 @@ if(walk === 2) {
 
 	if( key_code === 37 ) lr = 1;
 	if( key_code === 39 ) lr = 2;
+	if( key_code === 82 ) alert(stageX);
 }
 }
 var lr = 1;
-var y = 300;
-var x = 500;
-var stageX = 400;
+var stageX = 200;
 var stageY = 0;
 var walk = 2;
+var leftend = 670;
+var rightend = -2000;
 	document.getElementById( 'stickhead' ).style.top = y + "px";
 	document.getElementById( 'stickhead' ).style.left = x + "px";
 	document.getElementById( 'img1' ).style.left = stageX + "px";
@@ -283,12 +286,12 @@ addEventListener( "keydown", keydownfunc );
 function keydownfunc( event ) {
 if(walk === 2){
 	var key_code = event.keyCode;
-if(stageX > -2000) {
+if(stageX > rightend) {
 	if( key_code === 39 ) {
         stageX -= 10;
         }
 }
-if(stageX < 670) {
+if(stageX < leftend) {
 	if( key_code === 37 ) {
         stageX += 10;
         }
@@ -316,6 +319,7 @@ image.animate(
 );
 const image2 = document.getElementById('face2'); 
 image2.style.transform = `rotate(15deg)`;
+
 }
 
 function poteto2() {
@@ -334,6 +338,7 @@ image.animate(
 );
 const image2 = document.getElementById('face2'); 
 image2.style.transform = `rotate(0deg)`;
+
 }
 function poteto3() {
 const image = document.getElementById('face2'); 
@@ -375,5 +380,5 @@ function audio1() {
 const audio = new Audio('seeking.mp3');
   audio.play();
 }
-let intervalId4 = setInterval(audio1, 60500);
+
 
