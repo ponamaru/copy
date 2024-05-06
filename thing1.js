@@ -1,3 +1,4 @@
+
 document.write( '<img src="dor.png" id="dor1" width="600">' );
 document.write( '<img src="目.png" id="thing1" >' );
 document.write( '<img src="cuter.png" id="thing2" width="200">' );
@@ -108,6 +109,11 @@ const interval = setInterval(function() {
     fun = 4;
     clearInterval(interval);
     fadeout();
+setTimeout(function() {
+  screenout();
+window.location.href = 'part2.html';
+}, 2000);
+    
   }
   if(Math.sqrt( Math.pow( stageX+run-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101) {
   clearInterval(interval);
@@ -217,5 +223,20 @@ function screenin() {
   if (element.classList.contains("op0")) {
     element.classList.remove("op0");
     element.classList.add("op1");
+  }
+}
+
+function videoend() {
+  const element = document.getElementById("video");
+  if (element.classList.contains("hutoumei")) {
+    element.classList.remove("hutoumei");
+    element.classList.add("toumei");
+  }
+}
+function videostart() {
+  const element = document.getElementById("video");
+  if (element.classList.contains("toumei")) {
+    element.classList.remove("toumei");
+    element.classList.add("hutoumei");
   }
 }
