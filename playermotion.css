@@ -112,6 +112,16 @@ position: absolute;
 top: 0;
 left: 0;
 }
+#img3 {
+position: absolute;
+top: 0;
+left: 0;
+}
+#img4 {
+position: absolute;
+top: 0;
+left: 0;
+}
 #dor1 {
 position: absolute;
 top: 0;
@@ -124,13 +134,14 @@ left: 0;
 }
 #stickface {
 position: absolute;
-top: 300;
-left: 700;
+top: 0;
+left: 0;
 }
 #face2 {
 position: absolute;
-top: 300;
-left: 700;
+top: 0;
+left: 0;
+
 }
 html, body {
     overflow: hidden;
@@ -138,13 +149,10 @@ html, body {
 .item {
 	width: 1550px;
 	height: 800px;
-	margin: auto;
-transform-origin:50% 55%;
 }
 .item2 {
 	width: 1550px;
 	height: 800px;
-	margin: auto;
 transform-origin:50% 55%;
 }
 .fadeout {
@@ -153,14 +161,21 @@ transform-origin:50% 55%;
 }
 @keyframes fadeOut {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 #fadein {
   z-index: 1;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+}
+#black {
+  z-index: 2;
 object-fit: cover;
 position: absolute;
 top: 0;
@@ -177,4 +192,15 @@ left: 0;
   100% {
     opacity: 0 ;
   }
+}
+#thing2 {
+position: absolute;
+top: 0;
+left: 0;
+}
+.op0 {
+opacity: 0;
+}
+.op1 {
+opacity: 1;
 }
