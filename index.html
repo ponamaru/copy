@@ -10,20 +10,37 @@
 </head>
 <img id="img1" src="teststage.png" width="1450">
 <img id="img2" src="teststage.png" width="1450">
-<script>
-    var ua = navigator.userAgent.toLowerCase();
-    if ((ua.indexOf('iphone') > 0) || (ua.indexOf('ipad') > 0) || (ua.indexOf('ipod') > 0)) {
-        window.location.href = 'for-ipad.html';
-    }
-</script>
-<script src="thing1.js"></script>	
+<img id="img3" src="black.png" width="1450">
+<img id="img4" src="black.png" width="1450">
+<script src="thing1.js"></script>
 <script src="test.js"></script>
 <body>
 <script>
+    var ua = navigator.userAgent.toLowerCase();
+    if ((ua.indexOf('iphone') > 0) || (ua.indexOf('ipad') > 0) || (ua.indexOf('ipod') > 0)) {
+        window.location.href = "{for-ipad.html}";
+    } 
+var stageloop = 0;
+var SHL = stageX + 1440;
+
+
 function stagelink() {
+SHL = stageX + 1440;
+if(stageloop === 0){
+document.getElementById( 'img2' ).style.left = SHL + "px";
+document.getElementById( 'img3' ).style.left = SHL + 1440 + "px";
+document.getElementById( 'img4' ).style.left = SHL + 2880 + "px";
+}
+if(stageloop === 1){
+if(SHL < 0) {
+document.getElementById( 'img1' ).style.left = SHL + 1440 + "px";
+}
+if(stageX < 0) {
 document.getElementById( 'img2' ).style.left = stageX + 1440 + "px";
 }
-let intervalId = setInterval(stagelink, 10);
+}
+}
+let intervalId = setInterval(stagelink, 1);
 	</script>
 </body>
 <script>
