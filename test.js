@@ -311,7 +311,6 @@ image.animate(
     { transform: 'rotate(0deg)' }, 
     { transform: 'rotate(15deg)' } 
   ], 
-  // タイミングに関する設定
   {
     fill: 'backwards', 
     duration: 250,  
@@ -330,7 +329,6 @@ image.animate(
     { transform: 'rotate(15deg)' }, 
     { transform: 'rotate(0deg)' } 
   ], 
-  // タイミングに関する設定
   {
     fill: 'backwards', 
     duration: 250,  
@@ -348,7 +346,6 @@ image.animate(
     { transform: 'rotate(0deg)' }, 
     { transform: 'rotate(-15deg)' } 
   ], 
-  // タイミングに関する設定
   {
     fill: 'backwards', 
     duration: 250,  
@@ -366,7 +363,7 @@ image.animate(
     { transform: 'rotate(-15deg)' }, 
     { transform: 'rotate(0deg)' } 
   ], 
-  // タイミングに関する設定
+
   {
     fill: 'backwards', 
     duration: 250,  
