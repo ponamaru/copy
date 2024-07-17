@@ -226,6 +226,9 @@ function makita () {
 
  let intervalmakita;
 let intervalmakita2;
+ let Lwalk;
+let Rwalk;
+
 function makita2() {
         y += 5;
 	  if (element2.classList.contains("rlm")) {
@@ -277,12 +280,14 @@ if(walk === 2) {
 
         if(x < 10) {
 	if( key_code === 37 ) {
+	clearInterval(Lwalk);
         pm();	
         toggleClass5();
         }
 	}
         if(x > 1100) {
 	if( key_code === 39 ) {
+	clearInterval(Rwalk);
         pm();
         toggleClass4();
         }
@@ -328,26 +333,37 @@ var rightend = -2000;
 	document.getElementById( 'stickhead' ).style.top = y + "px";
 	document.getElementById( 'stickhead' ).style.left = x + "px";
 	document.getElementById( 'img1' ).style.left = stageX + "px";
-addEventListener( "keydown", keydownfunc );
+addEventListener( "keydown", keydownfunc3 );
 
-function keydownfunc( event ) {
+function keydownfunc3( event ) {
 if(walk === 2){
 	var key_code = event.keyCode;
-if(stageX > rightend) {
 	if( key_code === 39 ) {
-        stageX -= 10;
+if(stageX > rightend) {
+Lwalk = setInterval(rightwalk, 5);
         }
 }
-if(stageX < leftend) {
 	if( key_code === 37 ) {
-        stageX += 10;
-        }
+Lwalk = setInterval(leftwalk, 5);
         }
 	document.getElementById( 'img1' ).style.top = stageY + "px";
 	document.getElementById( 'img1' ).style.left = stageX + "px";
 }
 }
 
+function leftwalk(){
+if(stageX < leftend) {
+        stageX += 20;
+        }
+if(stageX > rightend) {
+        stageX -= 20;
+        }
+}
+function rightwalk(){
+if(stageX > rightend) {
+        stageX -= 20;
+        }
+}
 var nowtext = 3;
 
 function poteto() {
