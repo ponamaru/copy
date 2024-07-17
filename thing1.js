@@ -117,7 +117,7 @@ function sleep(ms, callback) {
 function runevent() {
 if(fun === 3) {
 const interval = setInterval(function() {
-if(stageX+run < x) {
+if(stageX+run-100 < x) {
   run += 18;
 } else {
   run -= 18;
