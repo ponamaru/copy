@@ -261,7 +261,8 @@ addEventListener( "keyup", keyupfunc1 );
 function keyupfunc1( event ) {
 if(walk === 2) {
 	var key_code = event.keyCode;
-
+	if( key_code === 37 ) clearInterval(Lwalk);
+	if( key_code === 39 ) clearInterval(Rwalk);
         if(x < 10) {
 	if( key_code === 37 ) {
 	clearInterval(Lwalk);
