@@ -352,11 +352,11 @@ if(walk === 2){
 	var key_code = event.keyCode;
 	if( key_code === 39 ) {
 if(stageX > rightend) {
-stageX -= 20;
+stageX -= 10;
         }
 }
 	if( key_code === 37 ) {
-if(stageX < leftend) stageX += 20;
+if(stageX < leftend) stageX += 10;
         }
 	document.getElementById( 'img1' ).style.top = stageY + "px";
 	document.getElementById( 'img1' ).style.left = stageX + "px";
