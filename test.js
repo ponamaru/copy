@@ -324,7 +324,7 @@ if(walk === 2){
 	var key_code = event.keyCode;
 	if( key_code === 39 ) {
 if(stageX > rightend) {
-Lwalk = setInterval(rightwalk, 5);
+Rwalk = setInterval(rightwalk, 5);
         }
 }
 	if( key_code === 37 ) {
@@ -337,15 +337,12 @@ Lwalk = setInterval(leftwalk, 5);
 
 function leftwalk(){
 if(stageX < leftend) {
-        stageX += 20;
+        stageX += 10;
         }
-if(stageX > rightend) {
-        stageX -= 20;
-        }
-}
+
 function rightwalk(){
 if(stageX > rightend) {
-        stageX -= 20;
+        stageX -= 10;
         }
 }
 var nowtext = 3;
