@@ -265,14 +265,14 @@ if(walk === 2) {
 	if( key_code === 39 ) clearInterval(Rwalk);
         if(x < 10) {
 	if( key_code === 37 ) {
-	clearInterval(Lwalk);
+	
         pm();	
         toggleClass5();
         }
 	}
         if(x > 1100) {
 	if( key_code === 39 ) {
-	clearInterval(Rwalk);
+	
         pm();
         toggleClass4();
         }
