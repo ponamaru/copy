@@ -227,6 +227,10 @@ function makita2() {
     if(jump > 47) {
     jump = 0;
     clearInterval(intervalmakita2);
+    if (element2.classList.contains("rlm")) {
+    if(lr === 2) Rwalk = setInterval(rightwalk, 500);
+    if(lr === 1) Lwalk = setInterval(leftwalk, 500);
+    }
     }
 }
  const element2 = document.getElementById("rightleg");
