@@ -340,7 +340,7 @@ function leftwalk(){
 if(stageX < leftend) {
         stageX += 10;
         }
-
+}
 function rightwalk(){
 if(stageX > rightend) {
         stageX -= 10;
