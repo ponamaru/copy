@@ -220,7 +220,7 @@ function makita () {
 let intervalmakita2;
 function makita2() {
         y += 5;
-	  if (element.classList.contains("rim")) {
+	  if (element.classList.contains("rlm")) {
 	if(lr === 1) stageX -= 5;
 	if(lr === 2) stageX += 5;
 	  }
