@@ -367,11 +367,17 @@ function leftwalk(){
 if(stageX < leftend) {
         stageX += 10;
         }
+  if (element2.classList.contains("rightleg")) {
+clearInterval(Lwalk);
+  }
 }
 function rightwalk(){
 if(stageX > rightend) {
         stageX -= 10;
         }
+  if (element2.classList.contains("rightleg")) {
+	  clearInterval(Rwalk);
+  }
 }
 var nowtext = 3;
 
