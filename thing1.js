@@ -8,7 +8,7 @@ function stagelink2() {
 if(fun === 1) {
 document.getElementById( 'thing1' ).style.left = stageX + 1400 + "px";
 document.getElementById( 'thing1' ).style.top = stageY + 400 + "px";
-
+document.getElementById( 'thing3' ).style.display = 'none';
 document.getElementById( 'thing2' ).style.left = - 400 + "px";
 }
 if(fun === 2) {
