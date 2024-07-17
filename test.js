@@ -367,6 +367,7 @@ function leftwalk(){
 if(stageX < leftend) {
         stageX += 10;
         }
+  const element2 = document.getElementById("rightleg");
   if (element2.classList.contains("rightleg")) {
 clearInterval(Lwalk);
   }
@@ -375,6 +376,7 @@ function rightwalk(){
 if(stageX > rightend) {
         stageX -= 10;
         }
+  const element2 = document.getElementById("rightleg");
   if (element2.classList.contains("rightleg")) {
 	  clearInterval(Rwalk);
   }
