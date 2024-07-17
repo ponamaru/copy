@@ -220,7 +220,7 @@ function makita () {
     if(jump > 47) {
     jump = 0;
     clearInterval(intervalmakita); 
-    intervalmakita2 = setInterval(makita2, 5);
+    intervalmakita2 = setInterval(makita2, 10);
     }
 }
 
@@ -244,8 +244,8 @@ function makita2() {
     jump = 0;
     clearInterval(intervalmakita2);
     if (element2.classList.contains("rlm")) {
-    if(lr === 2) Rwalk = setInterval(rightwalk, 50);
-    if(lr === 1) Lwalk = setInterval(leftwalk, 50);
+    if(lr === 2) Rwalk = setInterval(rightwalk, 100);
+    if(lr === 1) Lwalk = setInterval(leftwalk, 100);
     }
     }
 }
@@ -264,7 +264,7 @@ if( key_code === 38 ) {
 	}
 	  }
     if(jump === 0) {
-  intervalmakita = setInterval(makita, 5);
+  intervalmakita = setInterval(makita, 10);
     }
 
 } //ee
