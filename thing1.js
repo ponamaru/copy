@@ -123,7 +123,7 @@ window.location.href = 'part2.html';
 }, 2000);
     
   }
-  if(Math.sqrt( Math.pow( stageX+run-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101) {
+  if((Math.sqrt( Math.pow( stageX+run-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+1700-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)) {
   clearInterval(interval);
   screenin();
   fun = 1;
