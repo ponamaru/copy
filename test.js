@@ -208,6 +208,10 @@ var jump = 0;
 
 function makita () {
         y -= 5;
+	if (element.classList.contains("rlm")) {
+	if(lr === 1) stageX -= 5;
+	if(lr === 2) stageX += 5;
+	  }
         jump += 1;
     if(jump > 47) {
     jump = 0;
