@@ -235,7 +235,14 @@ function keydownfunc1( event ) {
 if(walk === 2) {
 	var key_code = event.keyCode;
 if( key_code === 38 ) {
-
+	  if (element2.classList.contains("rlm")) {
+	if(stageX < leftend) {
+	if(lr === 1) stageX += 5;
+	}
+	if(stageX > rightend) {
+	if(lr === 2) stageX -= 5;
+	}
+	  }
     if(jump === 0) {
   intervalmakita = setInterval(makita, 5);
     }
@@ -325,11 +332,11 @@ if(walk === 2){
 	var key_code = event.keyCode;
 	if( key_code === 39 ) {
 if(stageX > rightend) {
-Rwalk = setInterval(rightwalk, 50);
+stageX -= 20;
         }
 }
 	if( key_code === 37 ) {
-Lwalk = setInterval(leftwalk, 50);
+if(stageX < leftend) stageX += 20;
         }
 	document.getElementById( 'img1' ).style.top = stageY + "px";
 	document.getElementById( 'img1' ).style.left = stageX + "px";
