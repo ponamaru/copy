@@ -30,7 +30,7 @@ document.getElementById( 'thing3' ).style.left = stageX + 2100 + "px";
 document.getElementById( 'thing4' ).style.top = stageY + 400 + "px";
 document.getElementById( 'thing4' ).style.left = stageX + 2850 + "px";
 document.getElementById( 'thing5' ).style.top = stageY + 400 + "px";
-document.getElementById( 'thing5' ).style.left = stageX + 3050 + "px";
+document.getElementById( 'thing5' ).style.left = stageX + 3350 + "px";
 	
 document.getElementById( 'thing1' ).style.left = stageX + run + "px";
 }
@@ -134,7 +134,7 @@ window.location.href = 'part2.html';
     
   }
   if((Math.sqrt( Math.pow( stageX+run-100-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+1900-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)
-  ||(Math.sqrt( Math.pow( stageX+2700-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+2900-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)) {
+  ||(Math.sqrt( Math.pow( stageX+2700-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+3200-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)) {
   clearInterval(interval);
   screenin();
   fun = 1;
