@@ -234,12 +234,13 @@ function makita2() {
     clearInterval(intervalmakita2);
     }
 }
+ const element2 = document.getElementById("rightleg");
 
 function keydownfunc1( event ) {
 if(walk === 2) {
 	var key_code = event.keyCode;
 if( key_code === 38 ) {
- const element2 = document.getElementById("rightleg");
+
     if(jump === 0) {
   intervalmakita = setInterval(makita, 5);
     }
