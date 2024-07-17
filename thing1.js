@@ -19,6 +19,7 @@ if(fun === 3) {
 document.getElementById( 'thing2' ).style.left = - 500 + "px";
 document.getElementById( 'thing2' ).style.top = stageY + 400 + "px";
 document.getElementById( 'thing3' ).style.display = 'block';
+document.getElementById( 'thing3' ).style.top = stageY + 400 + "px";
 document.getElementById( 'thing3' ).style.left = stageX + 1700 + "px";
 	
 document.getElementById( 'thing1' ).style.left = stageX + run + "px";
