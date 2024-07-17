@@ -133,8 +133,8 @@ window.location.href = 'part2.html';
 }, 2000);
     
   }
-  if((Math.sqrt( Math.pow( stageX+run-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+2100-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)
-  ||(Math.sqrt( Math.pow( stageX+2850-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+3050-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)) {
+  if((Math.sqrt( Math.pow( stageX+run-50-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+2050-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)
+  ||(Math.sqrt( Math.pow( stageX+2800-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+3000-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)) {
   clearInterval(interval);
   screenin();
   fun = 1;
