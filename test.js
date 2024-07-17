@@ -209,8 +209,12 @@ var jump = 0;
 function makita () {
         y -= 5;
 	if (element2.classList.contains("rlm")) {
+	if(x > 10) {
 	if(lr === 1) stageX += 5;
+	}
+	if(x < 1100) {
 	if(lr === 2) stageX -= 5;
+	}
 	  }
         jump += 1;
     if(jump > 47) {
@@ -225,8 +229,12 @@ let intervalmakita2;
 function makita2() {
         y += 5;
 	  if (element2.classList.contains("rlm")) {
+	if(x > 10) {
 	if(lr === 1) stageX += 5;
+	}
+	if(x < 1100) {
 	if(lr === 2) stageX -= 5;
+	}
 	  }
         jump += 1;
     if(jump > 47) {
