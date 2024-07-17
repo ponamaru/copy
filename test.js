@@ -325,11 +325,11 @@ if(walk === 2){
 	var key_code = event.keyCode;
 	if( key_code === 39 ) {
 if(stageX > rightend) {
-Rwalk = setInterval(rightwalk, 5);
+Rwalk = setInterval(rightwalk, 50);
         }
 }
 	if( key_code === 37 ) {
-Lwalk = setInterval(leftwalk, 5);
+Lwalk = setInterval(leftwalk, 50);
         }
 	document.getElementById( 'img1' ).style.top = stageY + "px";
 	document.getElementById( 'img1' ).style.left = stageX + "px";
