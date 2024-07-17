@@ -235,10 +235,10 @@ if( key_code === 38 ) {
   intervalmakita = setInterval(makita, 5);
     }
         if(x > 10) {
-	if( key_code === 37 ) x -= 5;	
+	if( lr === 1 ) x -= 5;	
 	}
         if(x < 1100) {
-	if( key_code === 39 ) x += 5;
+	if( lr === 2 ) x += 5;
         }
 } //ee
         if(x > 10) {
