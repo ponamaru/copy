@@ -244,8 +244,8 @@ function makita2() {
     jump = 0;
     clearInterval(intervalmakita2);
     if (element2.classList.contains("rlm")) {
-    if(lr === 2) Rwalk = setInterval(rightwalk, 100);
-    if(lr === 1) Lwalk = setInterval(leftwalk, 100);
+    if(lr === 2) Rwalk = setInterval(rightwalk, 25);
+    if(lr === 1) Lwalk = setInterval(leftwalk, 25);
     }
     }
 }
