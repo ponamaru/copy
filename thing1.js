@@ -3,12 +3,16 @@ document.write( '<img src="dor.png" id="dor1" width="600">' );
 document.write( '<img src="目.png" id="thing1" >' );
 document.write( '<img src="cuter.png" id="thing2" width="200">' );
 document.write( '<img src="hand.png" id="thing3" width="700">' );
+document.write( '<img src="hand.png" id="thing4" width="700">' );
+document.write( '<img src="hand.png" id="thing5" width="700">' );
 
 function stagelink2() {
 if(fun === 1) {
 document.getElementById( 'thing1' ).style.left = stageX + 1400 + "px";
 document.getElementById( 'thing1' ).style.top = stageY + 400 + "px";
 document.getElementById( 'thing3' ).style.display = 'none';
+document.getElementById( 'thing4' ).style.display = 'none';
+document.getElementById( 'thing5' ).style.display = 'none';
 document.getElementById( 'thing2' ).style.left = - 400 + "px";
 }
 if(fun === 2) {
@@ -19,8 +23,14 @@ if(fun === 3) {
 document.getElementById( 'thing2' ).style.left = - 500 + "px";
 document.getElementById( 'thing2' ).style.top = stageY + 400 + "px";
 document.getElementById( 'thing3' ).style.display = 'block';
+document.getElementById( 'thing4' ).style.display = 'block';
+document.getElementById( 'thing5' ).style.display = 'block';
 document.getElementById( 'thing3' ).style.top = stageY + 400 + "px";
-document.getElementById( 'thing3' ).style.left = stageX + 1700 + "px";
+document.getElementById( 'thing3' ).style.left = stageX + 2100 + "px";
+document.getElementById( 'thing4' ).style.top = stageY + 400 + "px";
+document.getElementById( 'thing4' ).style.left = stageX + 2850 + "px";
+document.getElementById( 'thing5' ).style.top = stageY + 400 + "px";
+document.getElementById( 'thing5' ).style.left = stageX + 3050 + "px";
 	
 document.getElementById( 'thing1' ).style.left = stageX + run + "px";
 }
@@ -123,7 +133,8 @@ window.location.href = 'part2.html';
 }, 2000);
     
   }
-  if((Math.sqrt( Math.pow( stageX+run-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+1700-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)) {
+  if((Math.sqrt( Math.pow( stageX+run-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+2100-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)
+  ||(Math.sqrt( Math.pow( stageX+2850-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+3050-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)) {
   clearInterval(interval);
   screenin();
   fun = 1;
