@@ -208,7 +208,7 @@ var jump = 0;
 
 function makita () {
         y -= 5;
-	if (element.classList.contains("rlm")) {
+	if (element2.classList.contains("rlm")) {
 	if(lr === 1) stageX -= 5;
 	if(lr === 2) stageX += 5;
 	  }
@@ -224,7 +224,7 @@ function makita () {
 let intervalmakita2;
 function makita2() {
         y += 5;
-	  if (element.classList.contains("rlm")) {
+	  if (element2.classList.contains("rlm")) {
 	if(lr === 1) stageX -= 5;
 	if(lr === 2) stageX += 5;
 	  }
@@ -239,6 +239,7 @@ function keydownfunc1( event ) {
 if(walk === 2) {
 	var key_code = event.keyCode;
 if( key_code === 38 ) {
+ const element2 = document.getElementById("rightleg");
     if(jump === 0) {
   intervalmakita = setInterval(makita, 5);
     }
