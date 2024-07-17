@@ -209,10 +209,10 @@ var jump = 0;
 function makita () {
         y -= 5;
 	if (element2.classList.contains("rlm")) {
-	if(x > 10) {
+	if(stageX < leftend) {
 	if(lr === 1) stageX += 5;
 	}
-	if(x < 1100) {
+	if(stageX > rightend) {
 	if(lr === 2) stageX -= 5;
 	}
 	  }
@@ -229,10 +229,10 @@ let intervalmakita2;
 function makita2() {
         y += 5;
 	  if (element2.classList.contains("rlm")) {
-	if(x > 10) {
+	if(stageX < leftend) {
 	if(lr === 1) stageX += 5;
 	}
-	if(x < 1100) {
+	if(stageX > rightend) {
 	if(lr === 2) stageX -= 5;
 	}
 	  }
@@ -252,12 +252,7 @@ if( key_code === 38 ) {
     if(jump === 0) {
   intervalmakita = setInterval(makita, 5);
     }
-        if(x > 10) {
-	if( lr === 1 ) x -= 5;	
-	}
-        if(x < 1100) {
-	if( lr === 2 ) x += 5;
-        }
+
 } //ee
         if(x > 10) {
 	if( key_code === 37 ) {
