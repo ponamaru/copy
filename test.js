@@ -203,10 +203,38 @@ toggleClass3();
 
 addEventListener( "keydown", keydownfunc1 );
 
+var motion = 0;
+var jump = 0;
+
+function makita () {
+        y -= 5;
+        jump += 1;
+    if(jump > 47) {
+    jump = 0;
+    clearInterval(intervalmakita); 
+    intervalmakita2 = setInterval(makita2, 5);
+    }
+}
+
+ let intervalmakita;
+let intervalmakita2;
+function makita2() {
+        y += 5;
+        jump += 1;
+    if(jump > 47) {
+    jump = 0;
+    clearInterval(intervalmakita2);
+    }
+}
+
 function keydownfunc1( event ) {
 if(walk === 2) {
 	var key_code = event.keyCode;
-
+if( key_code === 38 ) {
+    if(jump === 0) {
+  intervalmakita = setInterval(makita, 5);
+    }
+} //ee
         if(x > 10) {
 	if( key_code === 37 ) {
         toggleClass5();
