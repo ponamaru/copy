@@ -18,7 +18,7 @@ document.getElementById( 'thing2' ).style.top = stageY + 400 + "px";
 if(fun === 3) {
 document.getElementById( 'thing2' ).style.left = - 500 + "px";
 document.getElementById( 'thing2' ).style.top = stageY + 400 + "px";
-	
+document.getElementById( 'thing3' ).style.display = 'block';
 document.getElementById( 'thing3' ).style.left = stageX + 1700 + "px";
 document.getElementById( 'thing3' ).style.top = stageY + 400 + "px";
 	
@@ -123,7 +123,7 @@ window.location.href = 'part2.html';
 }, 2000);
     
   }
-  if((Math.sqrt( Math.pow( stageX+run-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 51)||(Math.sqrt( Math.pow( stageX+1700-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)) {
+  if((Math.sqrt( Math.pow( stageX+run-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)||(Math.sqrt( Math.pow( stageX+1700-x, 2 ) + Math.pow( stageY+400-y, 2 ) ) < 101)) {
   clearInterval(interval);
   screenin();
   fun = 1;
