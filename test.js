@@ -353,13 +353,17 @@ function keydownfunc3( event ) {
 if(walk === 2){
 	var key_code = event.keyCode;
 	if( key_code === 39 ) {
+if(lr === 2) {
 if(stageX > rightend) {
 stageX -= 10;
         }
 }
+	}
 	if( key_code === 37 ) {
+if(lr === 1) {
 if(stageX < leftend) stageX += 10;
         }
+	}
 	document.getElementById( 'img1' ).style.top = stageY + "px";
 	document.getElementById( 'img1' ).style.left = stageX + "px";
 }
