@@ -255,6 +255,8 @@ function keydownfunc1( event ) {
 if(walk === 2) {
 	var key_code = event.keyCode;
 if( key_code === 38 ) {
+	clearInterval(Lwalk);
+	clearInterval(Rwalk);
 	  if (element2.classList.contains("rlm")) {
 	if(stageX < leftend) {
 	if(lr === 1) stageX += 5;
