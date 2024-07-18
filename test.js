@@ -366,18 +366,22 @@ if(stageX < leftend) stageX += 10;
 }
 
 function leftwalk(){
+if(lr === 1) {
 if(stageX < leftend) {
         stageX += 10;
         }
+}
   const element2 = document.getElementById("rightleg");
   if (element2.classList.contains("rightleg")) {
 clearInterval(Lwalk);
   }
 }
 function rightwalk(){
+if(lr === 2) {
 if(stageX > rightend) {
         stageX -= 10;
         }
+}
   const element2 = document.getElementById("rightleg");
   if (element2.classList.contains("rightleg")) {
 	  clearInterval(Rwalk);
