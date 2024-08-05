@@ -41,6 +41,22 @@ animation: floatingw 4s ease-in-out infinite alternate-reverse;
         transform: scaleY(1);
       }
 }
+#stickmouth {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mouthM {
+animation: mouthmove 0.2s ease-in-out infinite alternate-reverse;
+}
+@keyframes mouthmove {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
 .rotatoX {
 animation: floatingy 1.8s ease-in-out infinite alternate-reverse;
 }
