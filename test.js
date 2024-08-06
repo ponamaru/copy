@@ -80,6 +80,11 @@ if(serifName === true) {
   const mouth = document.getElementById("stickmouth");
     mouth.classList.remove("op0");
     mouth.classList.add("mouthM");
+setTimeout(function() {
+    const mouth = document.getElementById("stickmouth");
+    mouth.classList.remove("mouthM");
+    mouth.classList.add("op0");
+}, 2000);
 }else{
   const mouth = document.getElementById("stickmouth");
     mouth.classList.remove("mouthM");
@@ -87,7 +92,7 @@ if(serifName === true) {
 }
 }
 
-let mouthInterval = setInterval(mouthClass);
+addEventListener( "keydown", mouthClass );
 
 function toggleClas() {
   const element = document.getElementById("stickface");
