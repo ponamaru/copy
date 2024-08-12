@@ -290,7 +290,7 @@ if( key_code === 38 ) {
 	if(lr === 2) stageX -= 5;
 	}
 	  }
-    if(jump === 0) {
+    if(jump < 0) {
   intervalmakita = setInterval(makita, 10);
     }
 
