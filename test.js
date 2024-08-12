@@ -266,7 +266,7 @@ function makita2() {
 	  }
         jump += 1;
     if(jump > 47) {
-    jump = 0;
+    jump = -1;
     clearInterval(intervalmakita2);
     if (element2.classList.contains("rlm")) {
     if(lr === 2) Rwalk = setInterval(rightwalk, 25);
@@ -290,7 +290,7 @@ if( key_code === 38 ) {
 	if(lr === 2) stageX -= 5;
 	}
 	  }
-    if(jump < 0) {
+    if(jump === -1) {
   intervalmakita = setInterval(makita, 10);
     }
 
