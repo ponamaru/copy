@@ -267,6 +267,7 @@ function makita2() {
         jump += 1;
     if(jump > 47) {
     jump = -1;
+    y = 300;
     clearInterval(intervalmakita2);
     if (element2.classList.contains("rlm")) {
     if(lr === 2) Rwalk = setInterval(rightwalk, 25);
