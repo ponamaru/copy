@@ -229,7 +229,7 @@ toggleClass3();
 addEventListener( "keydown", keydownfunc1 );
 
 var motion = 0;
-var jump = 0;
+var jump = -1;
 
 function makita () {
         y -= 5;
